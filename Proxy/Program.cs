@@ -1,7 +1,6 @@
 ﻿using Proxy;
 
-Console.WriteLine( "Proxy Design Pattern example" );
-Console.WriteLine();
+Console.WriteLine( "Proxy Structural Design Pattern example\n" );
 
 TVColtroller tvController = new();
 var tvRemote = new TVRemote( tvController );

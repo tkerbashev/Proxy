@@ -1,12 +1,9 @@
 ﻿namespace Proxy
 {
-    public class TVRemote : ITVController
+    public class TVRemote( ITVController controller ) : ITVController
     {
-        ITVController _controller;
-        public TVRemote(ITVController controller)
-        {
-            _controller = controller;
-        }
+        readonly ITVController _controller = controller;
+
         public void ChannelDown( )
         {
             _controller.ChannelDown( );
